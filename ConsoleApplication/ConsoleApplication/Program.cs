@@ -50,6 +50,16 @@ namespace ConsoleApplication
             Console.WriteLine("\n End of file");
             Console.ReadKey();
         }
+        public static void RegexSamlpe()
+        {
 
+            Regex regex = new Regex(@"\d+");
+            Match match = regex.Match("Dot 25 Step");
+            if (match.Succes)
+            {
+                Console.WriteLine(match.Value);
+            }
+        }
     }
+
 }
